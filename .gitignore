@@ -1,0 +1,52 @@
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environment, secrets, and editor state
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Public dataset files and downloaded archives
+data/chest_xray/
+data/**/*.zip
+data/**/*.7z
+data/**/*.tar
+data/**/*.gz
+
+# Generated model and run outputs; keep folder placeholders tracked
+models/*.keras
+models/*.h5
+models/*.weights.h5
+outputs/*
+!outputs/.gitkeep
+
+# Temporary files
+*.tmp
+*.log
+Thumbs.db
+Desktop.ini
+# Never publish dataset, model files, or generated results
+/data/*
+!/data/README.md
+
+/models/*
+!/models/.gitkeep
+
+/outputs/*
+!/outputs/.gitkeep
+
+# Python environments and caches
+.venv/
+.venv*/
+__pycache__/
+.pytest_cache/
